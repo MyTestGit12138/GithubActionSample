@@ -48,4 +48,6 @@ jobs:
           USERNAME: ${{ secrets.ZEPP_USER }}
           PASSWORD: ${{ secrets.ZEPP_PWD }}
         run: |
+          echo "USERNAME exists: ${{ env.USERNAME != '' }}"
+          echo "PASSWORD exists: ${{ env.PASSWORD != '' }}"
           python zepplife_test.py
