@@ -118,7 +118,8 @@ def get_time():
 
 
 if __name__ == "__main__":
-    user, password = os.getenv('USERNAME'), os.getenv('PASSWORD')
+    username = os.getenv("USERNAME")
+    password = os.getenv("PASSWORD")
     steps = str(randint(minSteps, maxSteps))
     main()
     time.sleep(randint(15, 30))
