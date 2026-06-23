@@ -15,10 +15,6 @@ import requests, json, re, time, datetime
 from random import randint
 
 
-dataInfo = [
-    ["1392451747@qq.com", "Password01@"]
-]
-
 minSteps = 21909
 maxSteps = 32019
 
@@ -122,8 +118,7 @@ def get_time():
 
 
 if __name__ == "__main__":
-    for su in dataInfo:
-        user, password = su[0], su[1]
-        steps = str(randint(minSteps, maxSteps))
-        main()
-        time.sleep(randint(15, 30))
+    user, password = os.getenv('USERNAME'), os.getenv('PASSWORD')
+    steps = str(randint(minSteps, maxSteps))
+    main()
+    time.sleep(randint(15, 30))
