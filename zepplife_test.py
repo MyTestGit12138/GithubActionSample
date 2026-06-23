@@ -15,8 +15,8 @@ import requests, json, re, time, datetime,os
 from random import randint
 
 
-minSteps = 21909
-maxSteps = 32019
+minSteps = 8000
+maxSteps = 20000
 
 
 def login(user, password):
