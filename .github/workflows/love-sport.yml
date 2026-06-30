@@ -2,9 +2,9 @@
 name: 爱运动
 
 on:
-  schedule:
+  # schedule:
     # cron 为UTC时区，UTC 00:00 等价于北京时间 08:00 每日执行
-    - cron: '00 00 * * *'
+  #  - cron: '00 00 * * *'
   # 支持手动触发运行
   workflow_dispatch:
 
